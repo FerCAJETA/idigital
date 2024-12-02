@@ -1,8 +1,10 @@
 <template>
-  <!-- credencial -->
+  <!-- Credencial -->
   <div class="credential-wrapper">
-    <div class="credential-container mt-5">
+    <div class="credential-container">
+      <!-- Imagen de fondo -->
       <div class="background-image"></div>
+
       <!-- Encabezado -->
       <div class="header">
         <img src="@/assets/img/logoC1.png" alt="Logo 1">
@@ -14,16 +16,11 @@
       <div class="body">
         <!-- Sección de foto -->
         <div class="photo-section">
-          <div class="left-image">
-            <img src="../assets/img/manchas.png" alt="Imagen de lado izquierdo">
-          </div>
-          
           <img src="@/assets/img/perfil.png" alt="Foto de perfil" class="profile-photo">
         </div>
 
         <!-- Sección de información -->
         <div class="info-section">
-          
           <h2>Matías Valdés José Ignacio</h2>
           <p><strong>Núm. Seguro Social:</strong> 68200572888</p>
           <p>TSU en Tecnologías de la Información,</p>
@@ -31,8 +28,8 @@
 
           <!-- Sección de código de barras -->
           <div class="barcode">
-            <p>2302017</p>
             <img src="@/assets/img/barra.png" alt="Código de barras">
+            <p>2302017</p>
           </div>
         </div>
       </div>
@@ -43,7 +40,6 @@
       </div>
     </div>
   </div>
-  <!-- fin credencial -->
 </template>
 
 <script>
@@ -53,166 +49,183 @@ export default {
 </script>
 
 <style scoped>
-/* Las reglas de estilo van aquí */
+/* Importar fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 /* Variables de color */
 :root {
-    --primary-color: #001f54;
-    --secondary-color: #ffffff;
-    --hover-color: #e74c3c;
-    --separator-color: #001f54;
-    --background-color: #f8f9fa;
+  --primary-color: #004080;
+  --secondary-color: #ffffff;
+  --text-color: #333333;
+  --background-color: #f8f9fa;
 }
 
 /* General */
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--background-color);
-    color: #333;
-    margin: 0;
-    padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
 }
 
-/* credencial */
 /* Contenedor principal */
 .credential-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    min-height: 100vh; /* Asegura que ocupe toda la pantalla */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
-/* Ajuste para la credencial */
 .credential-container {
-    width: 800px; /* Aumentamos el tamaño del contenedor */
-    height: 450px; /* Aumentamos la altura del contenedor */
-    border: 2px solid #004080;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    padding: 20px; /* Aumentamos el padding */
-    position: relative; /* Necesario para el pie de página */
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 2 / 3;
+  border: 8px solid #004080; 
+  border-radius: 10px;
+  position: relative;
+  background-color: var(--secondary-color);
+  overflow: hidden;
+}
+
+/* Fondo (Jaguar) */
+.background-image {
+  background-image: url("@/assets/img/jag.png");
+  background-size: 50%;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 /* Encabezado */
 .header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    background-color: #fff;
-    padding: 15px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 .header img {
-    height: 50px; 
-    width: auto;
-    margin: 0 15px; 
+  height: 40px;
+  margin: 0 5px;
 }
 
-
+/* Cuerpo */
 .body {
-    display: flex;
-    flex: 1; 
-    margin-bottom: 20px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 15px;
 }
 
+/* Sección de foto */
 .photo-section {
-    width: 40%; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    padding: 15px; 
-}
-.left-image {
-    margin-right: 15px; /* Agrega un pequeño espacio entre las imágenes */
-}
-
-.left-image img {
-    width: 60px; /* Ajusta el tamaño de la nueva imagen */
-    height: auto;
-    border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 .profile-photo {
-    width: 150px; 
-    height: 150px;
-    border-radius: 10%;
-    border: 3px solid #004080;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  border: 3px solid var(--primary-color);
+  object-fit: cover;
 }
 
+/* Sección de información */
 .info-section {
-    width: 60%; 
-    padding: 20px; 
-    font-size: 16px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    color: #004080;
-    position: relative;
-}
-.background-image {
-    background-image: url('../assets/img/jag.png');
-    background-size: auto 50%; 
-    background-position: bottom right; 
-    background-repeat: no-repeat;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 700px; 
-    height: 700px;
+  text-align: center;
+  color: var(--text-color);
 }
 
 .info-section h2 {
-    font-size: 18px; 
-    margin-bottom: 10px;
-    color: #000;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: var(--primary-color);
 }
 
 .info-section p {
-    margin: 5px 0; 
-    font-size: 15px;
-    line-height: 1.6;
-    color: #000;
+  font-size: 14px;
+  line-height: 1.4;
 }
 
-/* Sección de código de barras */
+/* Código de barras */
 .barcode {
-    text-align: center;
-    border: 1px solid black;
-    border-radius: 10px;
-    display: inline-block;
-}
-
-.barcode p {
-    font-size: 14px; 
-    font-weight: bold;
-    color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: var(--background-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
 }
 
 .barcode img {
-    width: 250px; 
-    height: auto;
-    margin-bottom: 10px;
+  width: 80%;
+  height: auto;
+  margin-top: 5px;
+}
+
+.barcode p {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--text-color);
 }
 
 /* Pie de página */
 .footer {
-    position: absolute; 
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin-top: 20px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 18px; 
-    background-color: #004080;
-    color: #ffffff;
-    padding: 1px;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 5px 0;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  .credential-container {
+    max-width: 90%;
+    aspect-ratio: 2 / 3;
+  }
+
+  .profile-photo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .info-section h2 {
+    font-size: 16px;
+  }
+
+  .info-section p {
+    font-size: 12px;
+  }
+
+  .barcode img {
+    width: 70%;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
 }
 </style>
