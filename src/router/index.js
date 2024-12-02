@@ -1,7 +1,7 @@
 // Importa los módulos necesarios de Firebase Authentication y Vue Router.
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { createRouter, createWebHistory } from "vue-router";
-import AppForm from "../components/contacform.vue";
+import AppForm from "../components/contact.vue";
 import HomePage from "../components/homepage.vue";
 import AppAbout from "../components/about.vue";
 import AppIdigital from "../components/idigital.vue";

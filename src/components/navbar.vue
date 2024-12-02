@@ -72,7 +72,7 @@ export default {
       { name: "About", path: "/about", label: "About" },
       { name: "IDigital", path: "/credential", label: "IDigital" },
       { name: "QRService", path: "/qrservice", label: "QR Service" },
-      { name: "Contact", path: "/contactform", label: "Contact" },
+      { name: "Contact", path: "/contact", label: "Contact" },
     ];  
 
     // Función para manejar el cierre de sesión
