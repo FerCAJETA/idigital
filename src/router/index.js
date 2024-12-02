@@ -1,8 +1,9 @@
 // Importa los módulos necesarios de Firebase Authentication y Vue Router.
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { createRouter, createWebHistory } from "vue-router";
-import HomePage from "../components/homepage.vue"; // Importa el componente correcto
-import AppAbout from "../components/about.vue"; // El componente 'About'
+import AppForm from "../components/contacform.vue";
+import HomePage from "../components/homepage.vue";
+import AppAbout from "../components/about.vue";
 import AppIdigital from "../components/idigital.vue";
 import AppQrservice from "../components/qrservice.vue";
 import AppSignIn from "../components/signin.vue";
@@ -44,7 +45,12 @@ const routes = [
   {
     path: '/register',
     name: 'Register',
-    component: RegisterForm,  // Componente que se mostrará cuando se acceda a esta ruta
+    component: RegisterForm,
+  },
+  {
+    path: "/contact",
+    name: "Contact",
+    component: AppForm,
   },
 ];
 
