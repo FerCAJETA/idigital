@@ -13,10 +13,10 @@
     <div>
       <!-- Video -->
       <div class="vidcont">
-        <video class="video" src="@/assets/img/5386293-hd_1080_2048_30fps.mp4" autoplay muted loop></video>
+        <video class="video" src="../assets/img/bucle_home.mp4" autoplay muted loop></video>
         <div class="txt">
           <h1>Welcome to IDigital!</h1>
-          <p>Education is the best key to success in life</p>
+          <p>The best digital identification platform</p>
         </div>
       </div>
   
@@ -102,12 +102,18 @@
   }
   
   .txt {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fondo negro translúcido */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
   }
   
   .txt h1 {

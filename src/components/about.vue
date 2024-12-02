@@ -27,6 +27,10 @@
           to
           day work.
         </p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/id_digitalrm/" class="social-icon" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com/iDigital_RM" class="social-icon" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </div>
       </div>
     </div>
   </div>
@@ -66,12 +70,25 @@ body {
   flex-direction: column;
   min-height: 100vh; 
 }
+.social-icon{
+  margin: 5px;
+}
+.social-icon i {
+  font-size: 2rem;
+  color: white;  
+  transition: transform 0.3s ease; 
+}
+
+.social-icon:hover i {
+  transform: scale(1.2); 
+  color: rgb(153, 148, 148); 
+}
 
 /* Background Video Container */
 .background-container {
   position: relative;
   width: 100%;
-  height: 100vh; /* Hace que el video ocupe toda la pantalla */
+  height: 100vh;
   overflow: hidden;
 }
 
