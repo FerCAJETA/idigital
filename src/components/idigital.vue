@@ -76,6 +76,8 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
   padding: 10px;
   box-sizing: border-box;
 }

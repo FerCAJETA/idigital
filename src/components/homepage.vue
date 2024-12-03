@@ -49,8 +49,6 @@
         </div>
     </div>
 </div>
-      <!-- Separador -->
-      <div class="separator"></div>
   
       <!-- Información -->
       <div class="container py-5">
@@ -58,10 +56,9 @@
           <div class="col-md-6">
             <h2 class="section-title">What is IDigital?</h2>
             <p class="section-description mt-4">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi delectus autem nam amet ullam
-              corrupti omnis numquam ipsum excepturi animi ex est rem sint, voluptas accusantium.
+              Designed for educational institutions and companies, it makes access easier through a QR code or barcode with the user's information. To enter, the system asks the administrator to validate the code.
             </p>
-            <a href="#" class="btn btn-learn-more mt-4">Learn more &rarr;</a>
+            <a href="/about" class="btn btn-learn-more mt-4">Learn more &rarr;</a>
           </div>
           <div class="col-md-6">
             <div class="row g-3">
@@ -69,7 +66,7 @@
                 <img src="@/assets/img/personas.jpg" alt="biblio" class="img-fluid rounded" />
               </div>
               <div class="col-6">
-                <img src="@/assets/img/graduacion.jpg" alt="graduacion" class="img-fluid rounded" />
+                <img src="../assets/img/home1.jpg" alt="graduacion" class="img-fluid rounded" />
               </div>
               <div class="col-6">
                 <img src="@/assets/img/salon de clases.jpg" alt="salon" class="img-fluid rounded" />

@@ -15,25 +15,22 @@
       <div class="row">
         <div class="col-md-4">
           <h5><i class="fa-solid fa-graduation-cap"></i> School</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p class="uni">Universidad Tecnológica de la Riviera Maya</p>
           <div class="social-icons">
-            <a href="#" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="#" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/utrivieramaya.bis/profilecard/?igsh=aXd2cWR2d2poc21j" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/share/1X6ZWLS7GR/?mibextid=LQQJ4d" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://x.com/ut_rivieramaya?s=21" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
           </div>
         </div>
         <div class="col-md-4">
           <h5>Contact Us</h5>
           <p><i class="fa-solid fa-location-dot"></i> Solidaridad, Playa Del Carmen, QROO, MX</p>
-          <p><i class="fa-regular fa-envelope"></i> IDigital@gmail.com</p>
+          <p><i class="fa-regular fa-envelope"></i> id_digitalrm@outlook.com</p>
           <p><i class="fa-solid fa-phone-volume"></i> 9841570489</p>
         </div>
         <div class="col-md-4">
           <h5>Find Us on Google Map</h5>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=...your_map_url..."
-            width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.6487665024933!2d-87.06636422602023!3d20.683863799537637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e2a14f13ba35%3A0x25d0481d668fb996!2sUniversidad%20Tecnol%C3%B3gica%20de%20la%20Riviera%20Maya%20-%20BIS!5e0!3m2!1ses-419!2smx!4v1733264580444!5m2!1ses-419!2smx" width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
@@ -58,14 +55,16 @@ export default {
 
 .footersintop h5 {
   font-weight: bold;
-  color: #f1c40f;
+  color: #049c84;
 }
 
 .footersintop p {
   color: #ffffff;
   font-size: 0.9rem;
 }
-
+.uni p{
+  font-size: 18px;
+}
 .footersintop .social-icons {
   margin-top: 10px;
 }
@@ -78,11 +77,10 @@ export default {
 }
 
 .footersintop .social-icon:hover {
-  color: #f1c40f;
+  color: #049c84;
 }
 
 .footersintop .copyright {
-  background-color: #003080;
   color: white;
   font-size: 0.8rem;
 }

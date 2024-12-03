@@ -19,7 +19,7 @@
             <p class="text"><strong>You can give access to your guest with this QR code</strong></p>
             <div class="qr-layout">
                 <div class="qr-code-section">
-                    <img src="@/assets/img/qr-code.png" alt="QR Code" class="qr-image">
+                    <img src="../assets/img/imghome.jpg" alt="QR Code" class="qr-image">
                 </div>
                 <div class="qr-buttons">
                     <div class="qr-btn qr-btn-share">
@@ -161,7 +161,7 @@ input {
   width: 400px;
   height: 400px;
   border: 5px solid black;
-  border-radius: 10%;
+  border-radius: 15px;
 }
 
 .qr-buttons {

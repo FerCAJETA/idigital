@@ -196,7 +196,7 @@ export default {
 }
 
 .submit-btn:hover:not(:disabled) {
-  background-color: #ff5722;
+  background-color: #021a3d;
 }
 
 .submit-btn:disabled {
