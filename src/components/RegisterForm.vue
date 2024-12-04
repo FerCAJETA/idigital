@@ -54,7 +54,7 @@ const register = async () => {
   try {
     await createUserWithEmailAndPassword(auth, email.value, password.value);
     alert("Successfully registered");
-    router.push("/Feed");
+    router.push("/");
   } catch (error) {
     console.error(error.code, error.message);
     if (error.code === "auth/email-already-in-use") {
@@ -77,7 +77,7 @@ const signInWithGoogle = async () => {
     const result = await signInWithPopup(auth, provider);
     console.log("Google Sign-In successful", result.user);
     alert("Signed in with Google successfully");
-    router.push("/Feed");
+    router.push("/");
   } catch (error) {
     console.error("Google Sign-In failed", error.message);
     errorMessage.value = "Google Sign-In failed. Please try again.";
@@ -150,7 +150,7 @@ const signInWithGoogle = async () => {
 }
 
 .submit-btn {
-  background: linear-gradient(to right, #ff4300, #ff6400);
+  background: linear-gradient(to right, #032d6c, #173869);
   color: white;
 }
 

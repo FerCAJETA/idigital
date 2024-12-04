@@ -32,6 +32,11 @@
             <router-link to="/signin" class="btn btn-outline-primary px-3 py-2 rounded-pill">Sign In</router-link>
           </li>
 
+          <!-- Botón Sign Up solo si el usuario no está logueado -->
+          <li v-if="!isLoggedIn" class="nav-item ms-2">
+            <router-link to="/register" class="btn btn-primary px-3 py-2 rounded-pill">Sign Up</router-link>
+          </li>
+
           <!-- Botón Sign Out solo si el usuario está logueado -->
           <li v-if="isLoggedIn" class="nav-item ms-2">
             <button @click="handleSignOut" class="btn btn-outline-danger px-3 py-2 rounded-pill">Sign Out</button>
@@ -41,6 +46,7 @@
     </div>
   </nav>
 </template>
+
 
 <script>
 import { computed, ref, onMounted } from "vue";

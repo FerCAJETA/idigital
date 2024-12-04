@@ -9,6 +9,7 @@
 
 <script>
 import AppNavbar from './components/navbar.vue';
+
 import AppFooter from './components/footer.vue';
 
 export default {
